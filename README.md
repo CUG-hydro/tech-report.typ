@@ -1,6 +1,8 @@
 # typst自然科学报告写作规范
 
-案例：<example/ch03_蒸散发的基本原理.typ>
+
+案例：[example/ch03_蒸散发的基本原理.typ](example/ch03_蒸散发的基本原理.typ)
+
 
 ![](./example/ch03_1.png)
 
