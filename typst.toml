@@ -1,0 +1,10 @@
+[package]
+name = "cug-hydro"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["Dongdong Kong"]
+license = "MIT"
+description = "Technical report writing standards."
+compiler = "0.12.0"
+repository = "https://github.com/kongdd/cug-hydro.typ"
+exclude = ["example", "images"]
