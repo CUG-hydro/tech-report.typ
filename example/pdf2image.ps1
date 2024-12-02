@@ -1,11 +1,16 @@
 # pdf2image a.pdf
 param (
   [string]$f
+  # [int]$p = 1
 )
 
-# replace .pdf to .png
-$fout = $f -replace ".pdf", ".png"
+for ($p = 1; $p -le 3; $p++) {
+  # replace .pdf to .png
+  $fout = "ch03_$p.png"
+  # $fout = $f -replace ".pdf", "_$p.png"
 
-# echo "$args to $f.png"
-inkscape $f --pdf-poppler --export-background-opacity=0 --export-dpi=300 --export-type=png --pages=1
-# --export-filename $fout
+  # echo "$args to $f.png"
+  inkscape $f --pdf-poppler --export-dpi=300 `
+    -b FFFFFF `
+    --export-background-opacity=0 --export-type=png --pages=$p --export-filename $fout
+}
